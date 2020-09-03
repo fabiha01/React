@@ -17,12 +17,23 @@ class App extends Component {
     })
   }
 
+  addTodo = (todo) => {
+    todo.id = Math.random();
+    // create a copy of the array
+    let todos = [...this.state.todos, todo];
+    // add the new todo onto the copy of the array
+    this.setState({
+      todos
+    })
+
+  }
+
   render() {
     return(
       <div className="todo-app container">
         <h1 className="center blue-text">Todos</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
-        <AddTodo />
+        <AddTodo addTodo={this.addTodo} />
     </div>
     )
 
