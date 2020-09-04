@@ -1,27 +1,12 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Pokeball from '../pokeball.png';
+import {connect} from 'react-redux';
 
 class Home extends Component {
-    state = {
-        posts: []
-    }
-    // use the lifecycle hook componentDidMount
-    componentDidMount() {
-        // this is asynchronus - it will take some time to get the posts
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then (response => {
-            console.log(response);
-            // store the posts to the state - only get 10 posts
-            this.setState({
-                posts: response.data.slice(0, 10)
-            })
-        })
-
-    }
     render(){
-        const {posts} = this.state;
+        console.log(this.props);
+        const {posts} = this.props; // props being sent from redux store
         // we are mapping through posts to get each individual post
         // we're setting that array in postList
         const postList = posts.length ? (
@@ -52,4 +37,14 @@ class Home extends Component {
 
 }
 
-export default Home;
+// create a function here to set mapStateToProps
+// to the state of the redux store
+const mapStateToProps = (state) => {
+    return {
+        posts: state.posts // setting the state.posts from redux
+    }
+}
+
+// connecting redux store passing the props as set in variable above
+// passing the home component to connect to redux store
+export default connect(mapStateToProps)(Home);
