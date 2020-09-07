@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import {deletePost} from '../actions/postActions';
 
 class Post extends Component {
     // we are calling this function which is firing the deletePost function
     // which is inside of mapDispatchToProps
     handleClick = () => {
         this.props.deletePost(this.props.post.id);
-        this.props.history.push('/');
+        // after calling the delete function - we send the user back to homepage
+        this.props.history.push('/'); 
     }
     render() {
         console.log(this.props);
@@ -41,7 +43,7 @@ const mapStateToprops = (state, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         // we are disptaching the action - type and id whenever we call the delete post function
-        deletePost: (id) => { dispatch({type: 'DELETE_POST', id: id}) }
+        deletePost: (id) => { dispatch(deletePost(id)) }
     }
 
 }
