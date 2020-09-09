@@ -15,3 +15,19 @@ class Person {
 const person = new Person('Fabiha');
 console.log(person); 
 person.walk();
+
+// this is an example of inheritance
+class Teacher extends Person{
+    constructor(name, degree) {
+        super(name); // this will initialise the name property
+        this.degree = degree;
+        
+    }
+    teach() {
+        console.log('teach');
+    }
+};
+
+const teacher = new Teacher('Ali', 'Msc');
+teacher.teach();
+console.log(teacher);
