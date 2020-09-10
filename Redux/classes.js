@@ -1,4 +1,4 @@
-import {Teacher} from './teacher';
+import Teacher, {promote} from './teacher';
 // import {Person} from './person';
 
 // passing 'Fabiha' as an argument
