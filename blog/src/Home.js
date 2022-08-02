@@ -1,9 +1,24 @@
+import { useState } from 'react';
+
 const Home = () => {
-  return ( 
+
+  const [blogs, setBlogs] = useState([
+    { title: 'My new website', body: 'lorem ipsum', author: 'mario', id: 1 },
+    { title: 'Welcome Party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
+    { title: 'Developer top tips', body: 'lorem ipsum again...', author: 'mario', id: 3 }
+  ]);
+
+  return (
     <div className="home">
-      <h1>Homepage</h1>
+      {blogs.map(blog => (
+        <div className='blog-preview' key={ blog.id }>
+          <h2>{ blog.title }</h2>
+          <p>By: { blog.author }</p>
+
+        </div>
+      ))}
     </div>
-   );
+  );
 }
  
 export default Home;
