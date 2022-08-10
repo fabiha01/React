@@ -27,7 +27,6 @@
 }
 .navbar a:hover {
   color: teal;
-  text-decoration: underline;
 }
 .content {
   max-width: 600px;
@@ -50,4 +49,8 @@
   font-size: 20px;
   color: cadetblue;
   margin-bottom: 8px;
+}
+
+.blog-preview a {
+  text-decoration: none;
 }
