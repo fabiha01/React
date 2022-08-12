@@ -23,6 +23,18 @@
       "body": "more text here",
       "author": "mario",
       "id": 4
+    },
+    {
+      "title": "My new title 3",
+      "body": "new article 3",
+      "author": "yoshi",
+      "id": 5
+    },
+    {
+      "title": "This is the newest blog",
+      "body": "lorem ipsum",
+      "author": "mario",
+      "id": 6
     }
   ]
 }
