@@ -31,7 +31,7 @@ data we need to track:
   -- past guesses
     -- an array of past guesses
     -- each past guess is an array of letter objects [{}, {}, {}, {}, {}]
-    -- each object represents a letter in the guess word {letter: 'a', color: 'yellow'}
+    -- each object represents a letter in the guess word {key: 'a', color: 'yellow'}
   -- current guess
     -- string 'hello'
   -- keypad letters
