@@ -25,10 +25,13 @@ const useWordle = (solution) => {
 
     // find any yellow letters
     formattedGuess.forEach((l, i) => {
-      if (solutionArray.includes(l.key)) {
+      if (solutionArray.includes(l.key) && l.color !== 'green') {
         formattedGuess[i].color = 'yellow';
+        solutionArray[solutionArray.indexOf(l.key)] = null;
       }
-    })
+    });
+
+    return formattedGuess;
 
   }
 
@@ -63,7 +66,8 @@ const useWordle = (solution) => {
         return;
       }
 
-      formatGuess();
+      const formatted = formatGuess();
+      console.log(formatted);
     }
     
     if (key === 'Backspace') {
