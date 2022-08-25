@@ -12,7 +12,10 @@ import useWordle from '../hooks/useWordle'
   }, [handleKeyup])
 
    return (
-     <div>Current Guess = {currentGuess}</div>
+     <>
+      <div>solution = {solution}</div>
+      <div>Current Guess = {currentGuess}</div>
+     </>
    )
  }
  
