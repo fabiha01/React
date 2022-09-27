@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-const CommentDetail = ( props ) => {
+const CommentDetail = props => {
   const { author } = props;
   return ( 
     <div className="comment">
