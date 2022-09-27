@@ -2,16 +2,16 @@ import { faker } from "@faker-js/faker";
 
 const CommentDetail = () => {
   return ( 
-    <div class="comment">
-      <a class="avatar">
+    <div className="comment">
+      <a className="avatar">
         <img src={faker.image.avatar()} alt="avatar" />
       </a>
-      <div class="content">
-        <a class="author">Matt</a>
-        <div class="metadata">
-          <span class="date">Today at 5:42PM</span>
+      <div className="content">
+        <a className="author">Matt</a>
+        <div className="metadata">
+          <span className="date">Today at 5:42PM</span>
         </div>
-        <div class="text">
+        <div className="text">
           How artistic!
         </div>
       </div>
