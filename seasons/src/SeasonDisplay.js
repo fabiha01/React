@@ -1,6 +1,6 @@
-const SeasonDisplay = () => {
+const SeasonDisplay = (props) => {
   return ( 
-    <div>Season Display</div>
+    <div>Season Display: { props.lat } </div>
    );
 }
  
