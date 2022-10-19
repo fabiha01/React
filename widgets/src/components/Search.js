@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Search = () => {
-  const [term, setTerm] = useState(''); 
+  const [term, setTerm] = useState('');
+
+  useEffect(() => {
+    console.log('I run after every render and at initial render');
+  }, [term]);
 
   return ( 
     <div>
