@@ -31,7 +31,7 @@ const Search = () => {
           <div className="header">
             {result.title}
           </div>
-          {result.snippet}
+          <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
         </div>
       </div>
     )
@@ -52,7 +52,7 @@ const Search = () => {
       </div>
       <div className="ui celled list">{renderResults}</div>
     </div>
-   );
+  );
 }
  
 export default Search;
