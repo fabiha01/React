@@ -26,6 +26,10 @@ const Search = () => {
       }
     }, 500);
 
+    return () => {
+      clearTimeout(timeoutId);
+    };
+
   }, [term]);
 
   const renderResults = results.map(result => {
