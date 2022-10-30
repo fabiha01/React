@@ -34,7 +34,7 @@ const options = [
 ];
 
 function App() {
-  const [selected, setSelected] = useState(options[0])
+  const [selected, setSelected] = useState(options[0]);
 
   return (
    <div>
