@@ -1,7 +1,7 @@
 const Link = ( {className, href, children} ) => {
   const onClick = (e) => {
     e.preventDefault();
-    console.log(e);
+    window.history.pushState({}, '', href);
   };
 
   return <a onClick={onClick} className={className} href={href}>{children}</a>
