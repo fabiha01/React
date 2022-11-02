@@ -1,5 +1,11 @@
 const Link = ( {className, href, children} ) => {
   const onClick = (e) => {
+
+    // if holding down cmd or ctrl
+    if (e.metaKey || e.ctrlKey) {
+      return;
+    }
+
     e.preventDefault();
     window.history.pushState({}, '', href);
 
