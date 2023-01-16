@@ -6,10 +6,11 @@ const PageOne = () => {
 
 const PageTwo = () => {
   return (
-  <div>
-    Page Two
-    <button>Click me</button>
-  </div>)
+    <div>
+      Page Two
+      <button>Click me</button>
+    </div>
+  )
 };
 
 const App = () => {
