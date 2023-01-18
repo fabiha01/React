@@ -1,7 +1,11 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const PageOne = () => {
-  return <div>Page One</div>
+  return (
+  <div>
+    Page One
+    <Link to="/pagetwo">Page Two</Link>
+  </div>)
 };
 
 const PageTwo = () => {
@@ -9,8 +13,9 @@ const PageTwo = () => {
     <div>
       Page Two
       <button>Click me</button>
+      <Link to="/">Page One</Link>
     </div>
-  )
+  ) 
 };
 
 const App = () => {
