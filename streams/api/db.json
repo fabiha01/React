@@ -4,6 +4,48 @@
       "title": "title",
       "description": "hola",
       "id": 1
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 2
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 3
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 4
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 5
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 6
+    },
+    {
+      "title": "New Title",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 7
+    },
+    {
+      "title": "New Title",
+      "description": "This was made by me",
+      "userId": null,
+      "id": 8
     }
   ]
 }
