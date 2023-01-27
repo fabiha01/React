@@ -12,52 +12,16 @@
       "id": 2
     },
     {
-      "title": "I created this stream",
-      "description": "This was made by me",
-      "userId": null,
-      "id": 3
-    },
-    {
-      "title": "I created this stream",
-      "description": "This was made by me",
-      "userId": null,
-      "id": 4
-    },
-    {
-      "title": "I created this stream",
-      "description": "This was made by me",
-      "userId": null,
-      "id": 5
-    },
-    {
-      "title": "I created this stream",
-      "description": "This was made by me",
-      "userId": null,
-      "id": 6
-    },
-    {
-      "title": "New Title",
-      "description": "This was made by me",
-      "userId": null,
-      "id": 7
-    },
-    {
-      "title": "New Title",
-      "description": "This was made by me",
-      "userId": null,
-      "id": 8
-    },
-    {
       "title": "Unexpected Behaviour",
       "description": "Didn't expect that",
       "userId": "113067162945545439624",
-      "id": 9
+      "id": 3
     },
     {
       "title": "Programmatic navigation",
       "description": "AAAAA",
       "userId": "113067162945545439624",
-      "id": 10
+      "id": 4
     }
   ]
 }
