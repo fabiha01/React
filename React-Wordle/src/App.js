@@ -1,9 +1,24 @@
+import { useEffect, useState } from 'react';
 import './App.css'
 
 function App() {
+  const [solution, setSoluton] = useState(null);
+
+  useEffect(() => {
+    fetch(' http://localhost:3001/solutions')
+      .then(res => res.json())
+        .then(json => {
+         // random int between 0 and 14
+         const randomSolution = json[Math.floor(Math.random()*json.length)];
+         setSoluton(randomSolution.word)
+        });
+  }, [setSoluton])
+  
+
   return (
     <div className="App">
       <h1>Wordle (Lingo)</h1>
+      {solution && <div>Solution is: {solution}</div>}
     </div>
   );
 }
