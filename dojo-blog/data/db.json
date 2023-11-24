@@ -29,6 +29,18 @@
       "body": "very harsh winds",
       "author": "yoshi",
       "id": 5
+    },
+    {
+      "title": "New event",
+      "body": "New events to celebrate this blog will be released soon - watch this space",
+      "author": "yoshi",
+      "id": 6
+    },
+    {
+      "title": "Severe weather alert",
+      "body": "Due to the horrendous weather - there will be delays between blogs. Fear not we have some great content coming your way, which will be published in the coming weeks. Stay safe",
+      "author": "mario",
+      "id": 7
     }
   ]
 }
